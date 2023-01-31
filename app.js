@@ -59,3 +59,28 @@ let circleLenght = (radius) => {
 for(let i=1; i <=20; i++) {
     circleLenght(3);
 }
+
+const a = ["A", "B", "C", "D"]
+a.push("E")
+console.log(a)
+
+const items = [
+    {name: 'Bike',      price: 100  },
+    {name: 'TV',        price: 200  },
+    {name: 'Album',     price: 10   },
+    {name: 'Book',      price: 5    },
+    {name: 'Phone',     price: 500  },
+    {name: 'Computer',  price: 1000 },
+    {name: 'Keybord',   price: 25   }
+]
+
+items.forEach((item) => {
+    console.log(item.name)
+})
+
+const total = items.reduce((currentTotal, item) => {
+return item.price + currentTotal
+}, 0)
+console.log(total)
+
+
